@@ -1,18 +1,17 @@
+import '../Styles/styles.css';
 import React from 'react';
-import NavComp from './NavComp';
+import Hero from './Hero';
+import Header from './Header';
 
-class App extends React.Component {
-
-    render(){
-        return(
-           
-            <div>
-                 <NavComp />
-                WED-nesday App
-
+const App = () => {
+    return(
+        <div >
+            <Header />
+            <div className="heroBody">
+                <Hero />
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default App;
