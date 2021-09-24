@@ -11,7 +11,6 @@ const App = () => {
             <Header />
             <div className="heroBody">
             <Hero />
-            <CountDown />
             </div>
         </div>
     )
