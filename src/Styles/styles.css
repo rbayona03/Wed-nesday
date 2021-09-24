@@ -11,6 +11,7 @@
 body{
 padding: 0;
 margin: 0;
+height: 100vh;
 background-color: var(--body-color);
 color: var(--primary-fontColor);
 font-family: var(--main-font);
@@ -40,11 +41,12 @@ font-family: var(--main-font);
 }
 .heroBody{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translateY(3%);
 }
 
 .heroTitle{
@@ -65,5 +67,15 @@ font-family: var(--main-font);
 .locationSection{
     background-color: aquamarine;
     height: 100vh;
+}
+
+.countDown{
+    margin-top: 80px;
+    display: flex;
+    font-size: 28px;
+}
+
+.clock{
+    margin-left: 10px;
 }
 
