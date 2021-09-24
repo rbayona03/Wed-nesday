@@ -6,9 +6,7 @@ const Hero = () => {
     return(
         <div>
             {/*Navigation will go here*/}
-            
-            <h1 className="heroTitle">Janesy & Robert</h1>
-
+            <h1 className="heroTitle">Janesy <span>&</span> Robert</h1>
         </div>
     )
 }

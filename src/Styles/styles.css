@@ -1,6 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap');
+
+:root{
+    --primary-fontColor: #ffffff;
+    --secondary-fontColor: #989F7A;
+    --body-color: #232323;
+    --content: #77815c;
+    --main-font: 'Spartan', sans-serif;
+}
+
 body{
 padding: 0;
 margin: 0;
+background-color: var(--body-color);
+color: var(--primary-fontColor);
+font-family: var(--main-font);
+}
+.navigationMenu{
+    display: flex;
+    justify-content: center;
+}
+.navBtn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    cursor: pointer;
+    margin: 5px 10px;
+}
+.navHero{
+    width: 20vw;
+    text-align: center;
+    align-self: center;
+    font-size: 28px;
+}
+.fa-chevron-down{
+    font-weight: 100;
+    margin-left: 10px;
+    color: var(--content);
+    font-size: 14px;
 }
 .heroBody{
     width: 100vw;
@@ -11,20 +47,23 @@ margin: 0;
     align-items: center;
 }
 
-.navigationMenu{
+.heroTitle{
+    margin: auto;
+    font-size: 52px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 100;
+    cursor:none;
 }
 
-.navigationMenu h2{
-    padding: 25px 35px;
+.heroTitle span{
+    color: var(--content);
+    margin: 25px;
 }
-.heroTitle{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: chartreuse;
-    margin: auto;
-    font-size: 48px;
-    transform: translateY(-100%);
+
+.locationSection{
+    background-color: aquamarine;
+    height: 100vh;
 }
 
