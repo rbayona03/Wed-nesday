@@ -16,10 +16,12 @@ background-color: var(--body-color);
 color: var(--primary-fontColor);
 font-family: var(--main-font);
 }
+
 .navigationMenu{
     display: flex;
     justify-content: center;
 }
+
 .navBtn{
     display: flex;
     justify-content: space-evenly;
@@ -27,6 +29,7 @@ font-family: var(--main-font);
     cursor: pointer;
     margin: 5px 10px;
 }
+
 .navHero{
     width: 20vw;
     text-align: center;
@@ -47,6 +50,8 @@ font-family: var(--main-font);
     justify-content: center;
     align-items: center;
     transform: translateY(3%);
+    position: relative;
+    z-index: 100;
 }
 
 .heroTitle{
@@ -65,17 +70,76 @@ font-family: var(--main-font);
 }
 
 .locationSection{
-    background-color: aquamarine;
-    height: 100vh;
+    height: 100%;
+    position: relative;
+    z-index: -100;
+}
+
+.locationTitle{
+    width: fit-content;
+    margin: auto;
+    padding: 3rem 1rem;
+    font-size: 42px;
+
+}
+
+.eventDateCont{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 25px 0;
+
 }
 
 .countDown{
     margin-top: 80px;
-    display: flex;
     font-size: 28px;
 }
 
 .clock{
     margin-left: 10px;
+}
+
+.bgBanner{
+    background-color: brown;
+    clip-path: polygon(0% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 60%;
+    width: 15vw;
+    z-index: -2;
+    transform: rotate(25deg);
+}
+
+.locationBd{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2323238e;
+    z-index: -1;
+}
+
+.OS_Section {
+    padding: 2rem 0;
+}
+.OS_Section h1{
+    text-align: center;
+    margin: 4rem;
+}
+
+.OS_content{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.OS_Descript{
+    width: 50%;
+}
+
+.OS_HeroImg{
+    width: 350px;
+    height: 500px;
 }
 

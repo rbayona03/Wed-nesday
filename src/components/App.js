@@ -3,16 +3,17 @@ import React from 'react';
 import Hero from './Hero';
 import Header from './Header';
 import Location from './Location';
-import CountDown from './CountDown';
+import OurStory from './OurStory';
 
 const App = () => {
     return(
         <div >
             <Header />
             <div className="heroBody">
-            <Hero />
+                <Hero />
             </div>
-            <Location/>
+            <Location sectionTitle="When & Where"/>
+            <OurStory sectionTitle="Our Story"/>
         </div>
     )
 }
