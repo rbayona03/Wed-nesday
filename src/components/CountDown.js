@@ -9,6 +9,7 @@ const CountDown = () => {
     const [seconds, setSeconds] = useState(0);
     const [eventDate, setEvent] = useState('December 17, 2022');
 
+    
     useEffect(()=> {
         timeLogic(eventDate);
         setInterval(() => timeLogic(eventDate), 1000)
@@ -44,6 +45,8 @@ const CountDown = () => {
             <div className="clock">
                 {leadingZero(seconds)} {seconds <= 1 ? 'Second' : 'Seconds'}
             </div>
+            <h2 className="eventDate">{eventDate}</h2>
+
         </div>
     );
 };
